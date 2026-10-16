@@ -31,6 +31,6 @@ while opcion!=6:
         case 5:
             ejercicio13.ejecutar()
         case 6:
-            print("Saliendo")
+            print("Saliendo del menú")
         case _:
             print("Opción no valida")
