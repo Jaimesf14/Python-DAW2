@@ -36,7 +36,7 @@ while opcion!=5:
             print(f"--- MARCAS DISPONIBLES ---")
             for marca in MARCAS_MODELOS:
                 print(f"| {marca}")
-            marca_elegida = input("- Introduce la marca que quieres seleccionar: ")
+            marca_elegida = input("- Introduce la marca que quieres seleccionar: ").capitalize()
             if marca_elegida in MARCAS_MODELOS:
                 print(f"| Marca elegida = {marca_elegida}")
             else:
@@ -45,7 +45,7 @@ while opcion!=5:
             print(f"--- MODELOS DISPONIBLES ---")
             for modelo in MARCAS_MODELOS[marca_elegida]:
                 print(f"| {modelo}")
-            modelo_elegida = input("- Introduce el modelo que quieres seleccionar: ")
+            modelo_elegida = input("- Introduce el modelo que quieres seleccionar: ").capitalize()
             if modelo_elegida in MARCAS_MODELOS[marca_elegida]:
                 print(f"| Modelo elegido = {modelo_elegida}")
             else:
@@ -72,3 +72,4 @@ while opcion!=5:
         case _:
             print("a")
             break
+        
